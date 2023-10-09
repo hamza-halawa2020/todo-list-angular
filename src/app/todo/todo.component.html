@@ -1,0 +1,17 @@
+<div class="container">
+    <div class=" todo-item" [ngClass] = "{completed : todo.completed}">
+        <div class="row">
+            <div class="col-6">
+        
+                {{todo.text}}
+        
+            </div>
+            <div class="col-3" (click)="toggle()">
+                <div class="btn btn-sm btn-success">{{status}}</div>
+            </div>
+            <div class="col-3" (click)="delete()">
+                <div class="btn btn-sm btn-danger">Delete</div>
+            </div>
+        </div>
+    </div>
+</div>

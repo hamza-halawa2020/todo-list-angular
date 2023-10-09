@@ -1,0 +1,6 @@
+<form>
+    <input class="form-control p-1" type="text" #task [(ngModel)]="text" name="text">
+
+    <!-- {{text}} -->
+    <button class="btn btn-primary p-2 mt-2 w-100" (click)="addTodo(task.value)" type="submit">Add</button>
+</form> 
